@@ -11,7 +11,7 @@ import json
 import yaml
 
 
-def write_list_to_txt(file_path: str, data: list):
+def list_writer(file_path: str, data: list):
     """
     Write a list to a text file, with each item written on a separate line.
 
@@ -34,7 +34,7 @@ def write_list_to_txt(file_path: str, data: list):
         raise IOError(f"Error writing to file '{file_path}'.")
 
 
-def save_dict_to_yaml(file_path: str, data: dict):
+def dict2yaml(file_path: str, data: dict):
     """
     Save a dictionary to a YAML file.
 
@@ -56,7 +56,7 @@ def save_dict_to_yaml(file_path: str, data: dict):
         raise IOError(f"Error writing to file '{file_path}'.")
 
 
-def save_dict_to_json(file_path: str, data: dict):
+def dict2json(file_path: str, data: dict):
     """
     Save a dictionary to a JSON file.
 
@@ -78,7 +78,7 @@ def save_dict_to_json(file_path: str, data: dict):
         raise IOError(f"Error writing to file '{file_path}'.")
 
 
-def save_list_to_jsonl(file_path: str, data: list):
+def list2json(file_path: str, data: list):
     """
     Save a list of dictionaries to a JSONL (JSON Lines) file.
 
